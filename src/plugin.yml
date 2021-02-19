@@ -1,0 +1,30 @@
+name: CXPoint
+main: cxplugins.cxpoint.CXPoint
+version: 1.2.5
+depend: [CXFundamental]
+commands:
+  cxpoint:
+    description: A Command
+    usage: /Command
+    permission: CXPoint.Op
+    permission-message: You don't have <permission>
+    aliases: [CXPoint,point]
+  ppay:
+    description: A Command
+    usage: /Command
+    permission: CXPoint.Player
+    permission-message: You don't have <permission>
+    aliases: [PPay]
+  pbal:
+    description: A Command
+    usage: /Command
+    permission: CXPoint.Player
+    permission-message: You don't have <permission>
+    aliases: [PBal]
+  permissions:
+    CXPoint.Op:
+        description: Null
+        default: Op
+    CXPoint.Player:
+        description: Null
+        default: true
